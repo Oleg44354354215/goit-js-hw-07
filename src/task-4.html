@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+
+    <style>
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      label{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+        
+      }
+      input{
+        width: 360px;
+        height: 40px;
+        border: 1px solid #808080;
+        border-radius: 4px;
+      }
+      input:hover{
+        border: 1px solid #000;
+      }
+      button{
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        padding: 8px 16px;
+        width: 86px;
+        background: #4e75ff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        margin-top: 10px;
+      }
+      .but-lofin:hover{
+        background: #6c8cff;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <body>
+    <p><a href="./index.html">Go back</a></p>
+
+    <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+      <button type="submit" class = "but-lofin">Login</button>
+    </form>
+
+    <script src="./js/task-4.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+        .fin{
+          display: flex;
+          justify-content: space-between;
+          border-radius: 8px;
+          padding: 32px;
+          width: 486px;
+          height: 104px;
+          background-color: #f6f6fe;
+        }
+        input{
+        border: 1px solid #808080;
+        border-radius: 8px;
+        padding: 8px 72px;
+        width: 150px;
+        }
+        .box-last{
+          margin-top: 16px;
+          display: flex;
+          flex-direction: row;
+          border-radius: 8px;
+          padding: 32px;
+          width: 486px;
+          background: #f6f6fe;
+          gap:44px;
+          height:auto5
+        }
+        button{
+          border-radius: 8px;
+          border: none;
+          padding: 8px 16px;
+          width: 120px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.5;
+          letter-spacing: 0.04em;
+          color: #fff;
+
+        }
+        .but-first{
+         background: #4e75ff;
+        }
+        .but-sec{
+          background: #ff4e4e;
+        }
+        .but-sec:hover{
+          background-color: #ff7070;
+
+        }
+    </style>
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <body>
+    <p><a href="./index.html">Go back</a></p>
+
+    <div id="controls" class = "fin">
+      <input type="number" min="1" max="100" step="1" />
+      <button type="button" class = "but-first" data-create>Create</button>
+      <button type="button" class = "but-sec"data-destroy>Destroy</button>
+    </div>
+
+    <div id="boxes" class = "box-last"></div>
+
+    <script src="./js/task-6.js" type="module"></script>
+  </body>
+</html>
